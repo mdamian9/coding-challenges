@@ -41,16 +41,8 @@ convert = (word) => {
             };
         };
         pigLatinWord = vowCluster + conCluster + "ay";
-        console.log(vowCluster);
-        console.log(conCluster);
     };
     return pigLatinWord;
 };
 
-console.log(convert("say"));
-console.log(convert("croatia"));
-console.log(convert("english"));
-console.log(convert("smile"));
-console.log(convert("airdrop"));
-console.log(convert("under"));
-console.log(convert("smile"));
+console.log(`${convert("say")} ${convert("english")} ${convert("smile")}`);
