@@ -3,7 +3,6 @@ gapfulNumCheck = (number) => {
     var numStr = number.toString();
     if (numStr.length >= 3) {
         const divisor = parseInt(numStr[0] + numStr[numStr.length - 1]);
-        // console.log(divisor);
         if (number % divisor === 0) {
             flag = true;
         };
