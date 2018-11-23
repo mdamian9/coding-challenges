@@ -16,7 +16,7 @@ calcRatio = (arr) => {
     return `Positive = ${posRatio.toFixed(6)}\nNegative = ${negRatio.toFixed(6)}\nZero = ${zeroRatio.toFixed(6)}`;
 };
 
-const arrOne = [1, 1, 0, -1, -1];
+const arrOne = [-4, 3, -9, 0, 4, 1];
 const arrTwo = [0, 0, 0, 0, 1, -1];
 const arrThree = [2, -56, 0, 0, 5, 7, 0, 9, -2, 0];
 console.log(calcRatio(arrOne));
