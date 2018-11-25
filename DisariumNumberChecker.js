@@ -5,7 +5,16 @@
 // Write a program to check if a number is a Disarium number or not.
 
 checkDisarium = (num) => {
-
+    let flag = false;
+    const numStr = num.toString();
+    let sum = 0;
+    for (let i = 0; i < numStr.length; i++) {
+        sum += Math.pow(parseInt(numStr[i]), i + 1);
+    };
+    if (sum === num) {
+        flag = true;
+    };
+    return flag;
 };
 
 console.log(checkDisarium(135));
