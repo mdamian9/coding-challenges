@@ -17,4 +17,10 @@ checkDisarium = (num) => {
     return flag;
 };
 
-console.log(checkDisarium(135));
+console.log(checkDisarium(135)); // should output true
+
+for (let i = 0; i <= 10000; i++) {
+    if (checkDisarium(i)) {
+        console.log(i);
+    };
+};
