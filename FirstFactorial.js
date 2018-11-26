@@ -3,7 +3,19 @@
 // Input will always be an integer.
 
 firstFactorial = (num) => {
-
+    let val;
+    if (num < 1 || num > 18) {
+        val = "Not within valid range.";
+    } else {
+        if (num === 1) {
+            val = 1;
+        } else {
+            val = num * (firstFactorial(num - 1));
+        };    
+    };
+    return val;
 };
 
 console.log(firstFactorial(4));
+console.log(firstFactorial(19));
+console.log(firstFactorial(0));
