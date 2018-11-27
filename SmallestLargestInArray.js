@@ -2,7 +2,13 @@
 // Example - arr = [1, 2, 3, 4], findSmallest(arr) outputs 1 and findLargest(arr) outputs 4.
 
 findSmallest = (arr) => {
-
+    let smallest = arr[0];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < smallest) {
+            smallest = arr[i];
+        };
+    };
+    return smallest;
 };
 
 findLargest = (arr) => {
