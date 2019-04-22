@@ -3,7 +3,6 @@
     The function returns a boolean.
 */
 isPalindrome = (str) => {
-    let flag = false;
     /* 
         Construct a new string: we will use the array split() method to take away any white spaces
         (if a palindrome phrase is entered). We will then use the join() method to join the characters
@@ -19,9 +18,7 @@ isPalindrome = (str) => {
         revStr += newStr[i];
     };
     // If the reversed string is equal to the passed in string, return true.
-    if (revStr === newStr)
-        flag = true;
-    return flag;
+    return (revStr === newStr);
 };
 
 console.log(isPalindrome("1Taco cat1"));
