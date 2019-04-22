@@ -17,7 +17,7 @@ isPalindrome = (str) => {
     for (let i = newStr.length - 1; i >= 0; i--) {
         revStr += newStr[i];
     };
-    // If the reversed string is equal to the passed in string, return true.
+    // If the reversed string is equal to the passed in string, return true, otherwise return false.
     return (revStr === newStr);
 };
 
