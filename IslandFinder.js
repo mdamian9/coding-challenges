@@ -9,8 +9,9 @@ const data = [
 ];
 
 /*
-    Helper function to check adjacent elements in 2-D array. Once a 1 is found, the function turns that 1 and
-    all adjacent 1s and subsequent adjacent 1s to 0. If 1 or island of 1s is found, this returns true.
+    Helper function to check adjacent elements in 2-D array. We will pass in the data array, and the indexes
+    i and j of the element we're checking. Once a 1 is found, the function turns that 1 and all adjacent 1s
+    and subsequent adjacent 1s to 0. If 1 or island of 1s is found, this returns true, otherwise return false.
 */
 checkAdj = (arr, i, j) => {
     // Returns false by default (if element we're checking is 0, do nothing)
